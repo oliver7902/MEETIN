@@ -3718,7 +3718,7 @@ a.logo:hover{
 }
 .banner-image-1{
     width: 100%;
-    margin: 100px 0 0 70px;
+    margin: 100px 0 0 0px;
     overflow: hidden;
     -webkit-transform: translateZ(0) rotate(0.0001deg);
     transform: translateZ(0) rotate(0.0001deg);
