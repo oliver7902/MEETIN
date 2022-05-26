@@ -392,7 +392,10 @@
     }
     .hs-line-2{
         font-size: 48px;
-    }    
+    }
+    .hs-line-2 span{
+         font-size: 48px;
+    }
     .hs-line-3{
         font-size: 16px;
     }
