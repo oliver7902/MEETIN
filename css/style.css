@@ -3188,7 +3188,7 @@ a.logo:hover{
 }
 .team-item-detail-title{
     font-size: 18px;
-    font-weight: 400; /*500*/ 
+    font-weight: 400; /*500*/
     margin-bottom: 1em;
 }
 .team-item-descr{
@@ -3250,6 +3250,125 @@ a.logo:hover{
     opacity: 1;
 }
 .team-item.js-active .team-social-links a:hover{
+    opacity: 1;
+}
+
+
+
+/* ==============================
+   Team2
+   ============================== */
+
+.team-item2-wrap{
+    padding: 72px 56px 15px 56px;
+    position: relative;
+}
+.team-item2-decoration{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40.5%;
+    height: 100%;
+    opacity: .3;
+    background-color: #777777;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.team-item2-image{
+    position: relative;
+    overflow: hidden;
+}
+.team-item2-image img{
+    width: 75%;
+}
+
+.team-item2-detail{
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-40%);
+    -moz-transform: translateY(-40%);
+    transform: translateY(-40%);
+    padding: 20px 23px;
+    font-size: 15px;
+    color: rgba(255,255,255, .9);
+    text-align: center;
+    z-index: 2;
+    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+.team-item2-detail-title{
+    font-size: 18px;
+    font-weight: 400; /*500*/
+    margin-bottom: 1em;
+}
+.team-item2-descr{
+    position: relative;
+    line-height: 1.3;
+    text-align: center;
+    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+.team-item2-name{
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #111111;
+}
+.team-item2-role{
+    margin-top: 3px;
+    font-size: 13px;
+    font-weight: 400; /*500*/
+    color: #111;
+}
+.team-social-links{
+    font-size: 14px;
+}
+.team-social-links a{
+    display: inline-block;
+    padding: 3px 7px;
+    color: #ffffff;
+    opacity: .85;
+}
+.light-content .team-item2-name{
+    color: #fff;
+}
+.light-content .team-item2-role{
+    color: #fff;
+    opacity: .75
+}
+
+/* Hover state */
+.no-mobile .team-item2:hover .team-item2-image:after{
+    background: rgba(17,17,17, .9);
+}
+.no-mobile .team-item2:hover .team-item2-detail{
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 1;
+}
+.no-mobile .team-social-links a:hover{
+    opacity: 1;
+}
+
+/* Mobile touch */
+.team-item2.js-active .team-item2-image:after{
+    background: rgba(17,17,17, .9);
+}
+.team-item2.js-active .team-item2-detail{
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 1;
+}
+.team-item2.js-active .team-social-links a:hover{
     opacity: 1;
 }
 
@@ -3481,8 +3600,7 @@ a.logo:hover{
 }
 .work-item{
     width: 25%;
-    float: left;
-    margin: 0;  
+    margin: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -3491,17 +3609,17 @@ a.logo:hover{
     width: 49.99%;
 }
 .work-grid-3 .work-item{
-    width: 33.333%;
+    width: 50%;
 }
 .container .work-grid-3 .work-item{
-    width: 33.2%;
+    width: 15.0%;
 }
 .work-grid-5 .work-item{
     width: 20%;
 }
 
 .works-grid.work-grid-gut{
-    margin: 0 0 0 -30px;
+    margin: 0 0 0 0px;
 }
 .works-grid.work-grid-gut .work-item{
     padding: 0 0 30px 30px;
@@ -3560,17 +3678,25 @@ a.logo:hover{
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
 }
+
+
 .work-title{
-    margin: 0 0 3px 0;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 0;
+    font-size: 22px;
+
+}
+
+.work-title a{
+    text-align: center;
+    margin: 0 0 200px 12px;
     padding: 0;
     font-size: 22px;
     font-weight: 600;
-    letter-spacing: -0.02em;
-    line-height: 1.2;
-    text-transform: none;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+    text-decoration: none;
 }
+
 .container .work-grid-4 .work-title,
 .container .work-grid-5 .work-title{
     font-size: 18px;
